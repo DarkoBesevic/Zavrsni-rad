@@ -1,1 +1,2 @@
-# Zavrsni-rad
+# Zavrsni-rad 
+Web site – responsive design

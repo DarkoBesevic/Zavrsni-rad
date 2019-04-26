@@ -1,0 +1,233 @@
+/* Navigacija*/
+
+nav a {
+    display: block;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+div {
+    background-color: rgb(52, 163, 85);
+    color: white;
+    padding: 20px;
+}
+
+/* Početna*/
+
+.index {
+    background-color: #00000000;
+    background-image: url("../img/global_travel_detail.jpg");
+    min-height: 670px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters>.col {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sekcija .row .cont {
+    height: 194px;
+}
+
+.sekcija .row .cont div span {
+    font-size: 1.5em;
+}
+
+.sekcija .row .cont :hover, .sekcija .row .cont :focus {
+    cursor: auto;
+}
+
+.cont {
+    height: 450.55px;
+    overflow: hidden;
+}
+
+.cont div:first-child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.cont div:first-child::before {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00c2af66;
+}
+
+.cont div span {
+    font-size: 3em;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    color: #fff;
+}
+
+.cont :hover, .cont :focus {
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1) 0.2;
+    transform: scale(1.2);
+}
+
+.cont:hover div:first-child::before, .cont:focus div:first-child::before {
+    display: none;
+}
+
+.cont:hover div span, .cont:focus div span {
+    display: none;
+}
+
+.footer>div {
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+
+.footer>div>a {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*Agencija*/
+
+.about {
+    background-image: url("../img/dream-journey-travel-girl-lonely-sky-clouds-wallpaper-hd.jpg");
+    min-height: 450px;
+    background-position: top;
+}
+
+.opis {
+    font-size: 1.2em;
+}
+
+/*Modal Box - Nagradna igra*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: #000000;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 230px;
+    border-radius: 10px;
+}
+
+#dugme {
+    margin: 0 auto;
+    width: 250px;
+}
+
+/* Avio-karte*/
+
+video {
+    display: block;
+    width: 100%;
+}
+
+.partners {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partners>a {
+    opacity: .5;
+    border: 1px solid #333;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    filter: grayscale(0.8);
+    transition: opacity .3s, filter .3s;
+}
+
+.partners>a:hover {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.partners img {
+    height: 50px;
+}
+
+/*Kontakt*/
+
+.contact {
+    background-image: url("../img/write.jpg");
+    min-height: 550px;
+    background-position: top;
+}
+
+/* Aranzman*/
+
+.aranzman {
+    background-image: url("../img/home-slider-10.jpg");
+    min-height: 450px;
+    background-position: top;
+}
+
+/* Hvala */
+
+.hvala {
+    background-image: url("../img/pozadina_grafika.jpg");
+    min-height: 150px;
+    background-position: top;
+}

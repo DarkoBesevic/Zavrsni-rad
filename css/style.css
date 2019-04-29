@@ -12,6 +12,14 @@ div {
     padding: 20px;
 }
 
+button {
+    cursor: pointer;
+}
+
+.font {
+    font-family: "lobster";
+}
+
 /* Početna*/
 
 .index {
@@ -34,7 +42,7 @@ div {
 }
 
 .sekcija .row .cont {
-    height: 194px;
+    height: 234px;
 }
 
 .sekcija .row .cont div span {

@@ -30,6 +30,25 @@ window.onclick = function(event) {
   }
 }
 */
+
+// Sat
+function startTime() {
+  var sad = new Date();
+  var sat = sad.getHours();
+  var minut = sad.getMinutes();
+  var sekunda = sad.getSeconds();
+  minut = checkTime(minut);
+  sekunda = checkTime(sekunda);
+  document.getElementById('clock').innerHTML =
+  sat + ":" + minut + ":" + sekunda;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+window.onload=startTime(); 
+
 // Kontakt forma
 function myFunction() {
   document.getElementById("myForm").submit();

@@ -24,7 +24,7 @@ button {
 #clock {
     font-size: 30px;
     display: inline-block;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 /* Početna*/
@@ -71,7 +71,6 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-transition: all .5s;
-    -moz-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
 }
@@ -100,8 +99,6 @@ button {
 
 .cont :hover, .cont :focus {
     -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -moz-transform: scale(1.2);
     -ms-transform: scale(1) 0.2;
     transform: scale(1.2);
 }
@@ -199,9 +196,14 @@ video {
 
 .partners {
     padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .partners>a {
@@ -210,13 +212,19 @@ video {
     margin: 5px;
     padding: 5px;
     border-radius: 4px;
-    filter: grayscale(0.8);
+    -webkit-filter: grayscale(0.8);
+            filter: grayscale(0.8);
+    -webkit-transition: opacity .3s, -webkit-filter .3s;
+    transition: opacity .3s, -webkit-filter .3s;
+    -o-transition: opacity .3s, filter .3s;
     transition: opacity .3s, filter .3s;
+    transition: opacity .3s, filter .3s, -webkit-filter .3s;
 }
 
 .partners>a:hover {
     opacity: 1;
-    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
 }
 
 .partners img {
@@ -229,6 +237,11 @@ video {
     background-image: url("../img/write.jpg");
     min-height: 550px;
     background-position: top;
+}
+
+iframe {
+    display: block;
+    width: 100%;
 }
 
 /* Aranzman*/
